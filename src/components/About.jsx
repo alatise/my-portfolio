@@ -35,7 +35,7 @@ const About = () => {
         </p>
         <p className="text-[#555] font-mulish  font-medium">
           My main stack currently is React/Next.js in combination with Tailwind
-          CSS and JavaScript(with proficiency in TypeScript).
+          CSS and JavaScript(with proficiency in TypeScript). I'm proficient in VCS such as Git.
         </p>
       </div>
     </div>
