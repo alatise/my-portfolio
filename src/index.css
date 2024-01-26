@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-img {
+  -webkit-animation: moves 8s ease-in-out infinite;
+  animation: moves 8s ease-in-out infinite;
+  background-image: url(./public/Portfolio.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #2d2e32;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  height: 20rem;
+  position: relative;
+  transition: all 1s ease-in-out;
+  width: 20rem;
+}
+
+@keyframes moves {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.work-img {
+  /* bottom: 35px; */
+  position: absolute;
+  /* right: 98px; */
+  width: 6rem !important;
+  z-index: 10;
+}
+
+.img-side__main-img {
+  border-radius: 1.7rem;
+  /* height: 35rem;
+  width: 41rem; */
+}
+
+.span {
+  background-color: #fff;
+  border-radius: 50%;
+  /* bottom: -33px; */
+  /* height: 19rem; */
+  position: absolute;
+  /* right: 33px; */
+  /* width: 19rem; */
+}
+
+.span img {
+  -webkit-animation: rotate 9s linear infinite;
+  animation: rotate 9s linear infinite;
+  /* width: 19rem; */
+}
+
+/* .about-circle {
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
+  width: 19rem;
+  animation: 9s linear 0s infinite normal none running rotate;
+} */
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
